@@ -5,7 +5,7 @@ mkdir -p final
 
 get_dur() { ffprobe -v error -show_entries format=duration -of csv=p=0 "$1"; }
 
-VIDEO_DUR=$(get_dur ege_video_14_v3.mp4)
+VIDEO_DUR=15.023220
 
 while IFS=$'\t' read -r idx track; do
   audio="audio/track${track}.m4a"
